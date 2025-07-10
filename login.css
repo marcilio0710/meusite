@@ -15,11 +15,13 @@ main{
     display: flex;
     justify-content: center;/*alinha horizontalmente*/
     align-items: center;/*Alinha verticalemnte*/
-    height: 100vh;/*manda o conteúdo para o centro*/ 
+    height: 100%;/*manda o conteúdo para o centro*/ 
     background: url(assets/img.jpg);
     background-size: cover;/*estica a imagem na tela toda*/
-    background-position: center;
+    min-height: 100vh;
+           
 }
+
 .container{
 
     width: 420px;
@@ -30,6 +32,7 @@ main{
     padding: 30px 40px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     backdrop-filter: blur(20px);/*desfoca o fundo do container*/
+    margin: 20px 0px;
 }
 
 .container h1{
@@ -128,4 +131,9 @@ main{
 }
 .register-link a:hover{
     text-decoration: underline;
+}
+
+@media (max-width:999px){
+
+
 }

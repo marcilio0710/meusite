@@ -42,7 +42,7 @@ main {
   align-items: center;
   padding: 0 20px;
   height: 9vh;
-  position: sticky;
+  position: relative;
   z-index: 10;
 }
 
@@ -86,7 +86,7 @@ main {
 
 /* BOTÃO DE LOGIN FIXO (CANTO DIREITO) */
 .social-login {
-  position: fixed;
+  position: absolute;
   top: calc(25vh - 150px); /* sobe após a navbar */
   right: 20px;
 
@@ -111,6 +111,7 @@ main {
 
 
 .i-login {
+  
   font-size: 18px;
   background-color: #000;
   color: #fff;

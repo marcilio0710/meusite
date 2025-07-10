@@ -189,6 +189,8 @@ main {
     font-size: 12px;
     padding: 0 10px;
     gap: 6px;
+    position: relative;
+    z-index: 1;
   }
 
   .login-text {

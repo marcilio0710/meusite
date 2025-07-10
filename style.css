@@ -14,29 +14,36 @@ html{
     max-width: 100%;
     height: 100%;
     margin: 0;
-    min-height: 100vh;
+    padding: 0;
+    
 }
 body{   
   
     width: auto; 
-    background-size: cover;
-    
+    background-size: cover;    
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
     overflow-x: hidden;
     height: 100%;
-       
+    min-height: 100vh;
+    margin: 0;
+    bottom: 0;
+    
 
 }
-main{
-    
-    justify-content: space-around; 
-    background-color: transparent;
-    z-index: 1;
-    height: 100%;
-    background-size: 100%;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* garante layout empilhado */    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    padding: 40px 0; /* espaço interno */   
 }
+
 .social-bar{
     background-color:#C4D2D2;
     display: flex;
@@ -72,29 +79,30 @@ main{
     transition: all 0.3s ease; 
 }
 
-.user{
-border-radius: 10%;
-margin-left: 10px;
-position: absolute;
 
-}
 .social-login{
-    margin-left: 820px;
-    outline: none;
+    position: absolute; 
+    display: inline-flex;
     align-items: center;
-}
-.button-login{
-    background-color: orange;
-    border: 2px solid rgba(236, 185, 15, 0.705);
-    border-radius: 10px;
+    justify-content: center;
+    margin: -3.2vh 2vh;
+    width: 50vh;
+    height: 40px;
+    background-color: white;   
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 20x;
+    border: 2px solid rgb(245, 204, 204);
+    box-shadow: 0px 0 10px rgba(228, 103, 103, 0.1);
+    right: 10px;
     
-    font-size: 20px;
-    width: 250px;
-    height: 40px;    
-    text-decoration: none;
-    cursor: pointer;   
-    padding-left: 42px;
 }
+/*.button-login{
+
+}*/
 
 .social-icones .social-link:hover{
     opacity: 0.8;
@@ -184,7 +192,7 @@ h1{
         top: 24vh;
         right: 0;
         width: 100%;
-        height: 100vh;
+        height: 95vh;
         background: #23232e;
         display: flex;
         flex-direction: column;
@@ -196,6 +204,23 @@ h1{
         gap: 100px;
     }
 
+    .social-login{
+    position: absolute; 
+    margin: -3.2vh 2vh;
+    width: 30vh;
+    height: 40px;
+    background-color: white;   
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 12px;    
+    color: #000;
+    font-weight: 600;
+    margin-top: 20x;
+    border: 2px solid rgb(245, 204, 204);
+    box-shadow: 0px 0 10px rgba(228, 103, 103, 0.1);
+    right: 10px;
+    
+}
     .nav-list li{
         margin-left: 0;
         opacity: 0;
